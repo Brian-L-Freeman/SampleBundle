@@ -70,7 +70,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MonthChooser.vb" />
+    <Compile Include="PeriodChooser.vb" />
     <Compile Include="RadialPosition.vb" />
+    <Compile Include="WeekChooser.vb" />
+    <Compile Include="YearChooser.vb" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
