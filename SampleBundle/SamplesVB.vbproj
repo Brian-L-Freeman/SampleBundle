@@ -73,12 +73,11 @@
     <Compile Include="MonthChooser.vb" />
     <Compile Include="PeriodChooser.vb" />
     <Compile Include="RadialPosition.vb" />
+    <Compile Include="VBVersion.xaml.vb">
+      <DependentUpon>VBVersion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WeekChooser.vb" />
     <Compile Include="YearChooser.vb" />
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="Application.xaml.vb">
       <DependentUpon>Application.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -86,10 +85,10 @@
     <Compile Include="BaseInput.vb" />
     <Compile Include="BinarySlider.vb" />
     <Compile Include="CurrencyBox.vb" />
-    <Compile Include="MainWindow.xaml.vb">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Page Include="VBVersion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Import Include="System.Threading.Tasks" />
