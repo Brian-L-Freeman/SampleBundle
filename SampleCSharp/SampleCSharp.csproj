@@ -60,6 +60,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BaseInputC.cs" />
+    <Compile Include="RadialPosition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSharpWindow.xaml.cs">
