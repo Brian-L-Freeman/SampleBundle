@@ -4,7 +4,7 @@
     Private MonChoose As MonthChooser
     Private YrChoose As YearChooser
 
-    Private Sub MainWindow_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
+    Private Sub WindowLoaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
         Dim sld1 As New BinarySlider(BinarySlider.SliderSize.Huge, "Yes", "No",, True, BinarySlider.ColorSchemes.GreenRed)
         Dim sld2 As New BinarySlider(BinarySlider.SliderSize.Large, "Da", "Nyet",, True, BinarySlider.ColorSchemes.GreenRed) With {.Margin = New Thickness(10, 0, 0, 0)}
         Dim sld3 As New BinarySlider(BinarySlider.SliderSize.Medium, "Left", "Right",, True, BinarySlider.ColorSchemes.White) With {.Margin = New Thickness(10, 0, 0, 0)}

@@ -50,7 +50,6 @@ Public Class WeekChooser
 
 #Region "Constructor"
     Public Sub New(MinW As Byte, MaxW As Byte, CurW As Byte)
-        'TODO:  ADD OPTIONAL PARAMETER TO OVERRIDE WEEK/PERIOD DISABLING (AKA, FLASH LIMITS FUTURE, FORECAST DOESN'T)
         Dim ct As Byte
         MinWeek = MinW
         MaxWeek = MaxW
