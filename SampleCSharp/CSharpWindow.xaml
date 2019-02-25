@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CSharpWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="11,76,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Binary Slider Examples" VerticalAlignment="Top" Width="772">
+        <TextBlock HorizontalAlignment="Left" Margin="11,10,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Binary Slider Examples" VerticalAlignment="Top" Width="772">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF99E9FB" Offset="0"/>
@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </TextBlock.Background>
         </TextBlock>
-        <WrapPanel x:Name="wrpBinarySliders" HorizontalAlignment="Left" Height="87" Margin="11,97,0,0" VerticalAlignment="Top" Width="772"/>
+        <WrapPanel x:Name="wrpBinarySliders" HorizontalAlignment="Left" Height="87" Margin="10,31,0,0" VerticalAlignment="Top" Width="772"/>
         <TextBlock HorizontalAlignment="Left" Margin="435,189,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Currency Box Example (encapsulated input validation control to prevent non-numerical entries and enforce pos/neg value requirements)" VerticalAlignment="Top" Width="311" Height="55">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -45,16 +45,6 @@
         <Button x:Name="btnSix" Content="6" HorizontalAlignment="Left" Margin="46,276,0,0" VerticalAlignment="Top" Width="30"/>
         <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="81,276,0,0" VerticalAlignment="Top" Width="30"/>
         <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Margin="116,276,0,0" VerticalAlignment="Top" Width="30"/>
-        <TextBlock HorizontalAlignment="Left" Margin="9,10,0,0" TextAlignment="Center" TextWrapping="Wrap" Text="Custom year/month/week selection controls)" VerticalAlignment="Top" Width="773">
-            <TextBlock.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF99E9FB" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </TextBlock.Background>
-        </TextBlock>
-        <Grid x:Name="grdYear" HorizontalAlignment="Left" Height="40" Margin="11,31,0,0" VerticalAlignment="Top" Width="184"/>
-        <Grid x:Name="grdMonth" HorizontalAlignment="Left" Height="40" Margin="247,31,0,0" VerticalAlignment="Top" Width="534"/>
 
 
     </Grid>

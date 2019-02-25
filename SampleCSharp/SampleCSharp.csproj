@@ -61,6 +61,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BaseInputC.cs" />
+    <Compile Include="BinarySliderC.cs" />
     <Compile Include="RadialPosition.cs" />
   </ItemGroup>
   <ItemGroup>

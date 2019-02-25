@@ -80,7 +80,6 @@ namespace SampleCSharp
                 k.Handled = true;
             }
         }
-
         private void EnterField(object sender, EventArgs e)
         {
             FieldInEditMode = true;
@@ -109,7 +108,6 @@ namespace SampleCSharp
 
             _systemchange = false;
         }
-
         private void ExitField(object sender, EventArgs e)
         {
             FieldInEditMode = false;
@@ -164,8 +162,6 @@ namespace SampleCSharp
             //If t.Text = _heldvalue Then Exit Sub
             //RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(“Amountchanged”))
         }
-
-
         private void ValidateText(object sender, EventArgs e)
         {
             Flare = false;

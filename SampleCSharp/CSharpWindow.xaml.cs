@@ -17,30 +17,13 @@ namespace SampleCSharp
     public partial class CSharpWindow : Window
     {
        private RadialPosition GetRad;
-
-    //Private WkChoose As WeekChooser
-    //Private MonChoose As MonthChooser
-    //Private YrChoose As YearChooser
         public CSharpWindow()
         {
             InitializeComponent();
-
-            //    Dim sld1 As New BinarySlider(BinarySlider.SliderSize.Huge, "Yes", "No",, True, BinarySlider.ColorSchemes.GreenRed)
-            //Dim sld2 As New BinarySlider(BinarySlider.SliderSize.Large, "Da", "Nyet",, True, BinarySlider.ColorSchemes.GreenRed) With {.Margin = New Thickness(10, 0, 0, 0)}
-            //    Dim sld3 As New BinarySlider(BinarySlider.SliderSize.Medium, "Left", "Right",, True, BinarySlider.ColorSchemes.White) With {.Margin = New Thickness(10, 0, 0, 0)}
-            //    Dim sld4 As New BinarySlider(BinarySlider.SliderSize.Small, "1", "2",, False, BinarySlider.ColorSchemes.WhiteYellow) With {.Margin = New Thickness(10, 0, 0, 0)}
-            //    Dim curr As New CurrencyBox(80, True, BaseInput.FontSz.Standard)
-            //WkChoose = New WeekChooser(1, 5, 1)
-            //MonChoose = New MonthChooser(WkChoose, 1, 12, Month(Now)) With {.Width = 530}
-            //    YrChoose = New YearChooser(MonChoose, 2018, 2020, 2019) With {.Width = 180}
-            //    MonChoose.RelatedYearObject = YrChoose
-            //wrpBinarySliders.Children.Add(sld1)
-            //wrpBinarySliders.Children.Add(sld2)
-            //wrpBinarySliders.Children.Add(sld3)
-            //wrpBinarySliders.Children.Add(sld4)
-            //grdYear.Children.Add(YrChoose)
-            //grdMonth.Children.Add(MonChoose)
-            
+            BinarySliderC sld1 = new BinarySliderC(BinarySliderC.SliderSize.Huge, "Yes", "No", 1, true, BinarySliderC.ColorSchemes.GreenRed);
+            BinarySliderC sld2 = new BinarySliderC(BinarySliderC.SliderSize.Medium, "Ja", "Nein", 1, true, BinarySliderC.ColorSchemes.GreenRed) { Margin = new Thickness(10, 0, 0, 0) };
+            BinarySliderC sld3 = new BinarySliderC(BinarySliderC.SliderSize.Small, "Up", "Down", 1, true, BinarySliderC.ColorSchemes.White) { Margin = new Thickness(10, 0, 0, 0) };
+            BinarySliderC sld4 = new BinarySliderC(BinarySliderC.SliderSize.Huge, "1", "2", 1, true, BinarySliderC.ColorSchemes.WhiteYellow) { Margin = new Thickness(10, 0, 0, 0) };
             btnOne.Click += CreateRadialButton;
             btnTwo.Click += CreateRadialButton;
             btnThree.Click += CreateRadialButton;
@@ -50,6 +33,10 @@ namespace SampleCSharp
             btnSeven.Click += CreateRadialButton;
             btnEight.Click += CreateRadialButton;
             CurrencyBoxC cbc = new CurrencyBoxC(80, true, BaseInputC._fontsz.Standard, "$0.00", false, false);
+            wrpBinarySliders.Children.Add(sld1);
+            wrpBinarySliders.Children.Add(sld2);
+            wrpBinarySliders.Children.Add(sld3);
+            wrpBinarySliders.Children.Add(sld4);
             grdCurrency.Children.Add(cbc);
             cbc.UserFocus();
         }
