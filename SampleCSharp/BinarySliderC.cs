@@ -145,9 +145,11 @@ namespace SampleCSharp
                 Background = _secondcolorchoice,
                 Height = _internalheight,
                 Padding = new Thickness(0, _verttextpad, 0, 0),
-                Margin = new Thickness(0, 0, 0, 0)
+                Margin = new Thickness((_internalwidth/2), 0, 0, 0)
             };
-            _rgbpanel = new RadialGradientBrush();
+
+
+        _rgbpanel = new RadialGradientBrush();
             GradientStop gs1 = new GradientStop { Color = _firstpanelcolor, Offset = 3 };
             GradientStop gs2 = new GradientStop { Color = _secondpanelcolor};
             _rgbpanel.GradientStops.Add(gs1);

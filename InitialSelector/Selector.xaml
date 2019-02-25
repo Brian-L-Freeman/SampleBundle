@@ -5,17 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InitialSelector"
         mc:Ignorable="d"
-        Title="Select Language Type" Height="72.763" Width="244.747" ResizeMode="NoResize" WindowStyle="None">
+        Title="Language Selection" Height="162" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFCCDFF1" Offset="0"/>
+            <GradientStop Color="#FF766C6C" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <Button x:Name="btnVB" HorizontalAlignment="Left" Margin="29,2,0,0" VerticalAlignment="Top" Width="75" Height="69">
-            <Button.Background>
-                <ImageBrush ImageSource="Resources/vb.png" Stretch="UniformToFill"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="btnCSharp" HorizontalAlignment="Left" Margin="138,2,0,0" VerticalAlignment="Top" Width="75" Height="69">
-            <Button.Background>
-                <ImageBrush ImageSource="Resources/c.png"/>
-            </Button.Background>
-        </Button>
+        <Image Name="imgVB" HorizontalAlignment="Left" Height="101" Margin="10,10,0,0" VerticalAlignment="Top" Width="101" Source="Resources/vb.png" Stretch="UniformToFill">
+
+        </Image>
+        <Image Name="imgCSharp" HorizontalAlignment="Left" Height="101" Margin="171,10,0,0" VerticalAlignment="Top" Width="97" Source="Resources/c.png" Stretch="UniformToFill"/>
+
     </Grid>
 </Window>
